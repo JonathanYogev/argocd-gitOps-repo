@@ -1,5 +1,5 @@
 replicaCount: 1
-
+revisionHistoryLimit: 2
 image:
   repository: jonathanyogev01/hello-argo
   tag: latest
