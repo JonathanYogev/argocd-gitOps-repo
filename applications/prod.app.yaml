@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-argo-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/JonathanYogev/argocd-gitOps-repo.git
+    targetRevision: HEAD
+    path: helm-chart
+    helm:
+      valueFiles:
+        - values-dev.yaml
+  destination:
+    server: https://3B92DE0B60863DE88671F639D160A38E.gr7.il-central-1.eks.amazonaws.com
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

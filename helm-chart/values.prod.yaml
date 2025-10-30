@@ -1,0 +1,6 @@
+replicaCount: 4
+
+image:
+  repository: jonathanyogev01/hello-argo
+  tag: latest
+  pullPolicy: IfNotPresent
