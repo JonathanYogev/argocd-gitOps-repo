@@ -11,7 +11,7 @@ spec:
     path: helm-chart
     helm:
       valueFiles:
-        - values-dev.yaml
+        - values.prod.yaml
   destination:
     server: https://3B92DE0B60863DE88671F639D160A38E.gr7.il-central-1.eks.amazonaws.com
     namespace: default
