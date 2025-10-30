@@ -4,3 +4,5 @@ image:
   repository: jonathanyogev01/hello-argo
   tag: latest
   pullPolicy: IfNotPresent
+
+environmentName: Prod

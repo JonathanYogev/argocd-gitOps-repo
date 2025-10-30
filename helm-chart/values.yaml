@@ -5,6 +5,8 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
+environmentName: {{ .Release.Name }}
+
 service:
   type: LoadBalancer
   port: 80
