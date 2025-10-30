@@ -5,7 +5,7 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-environmentName: {{ .Release.Name }}
+environmentName: Dev
 
 service:
   type: LoadBalancer
