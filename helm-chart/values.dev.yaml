@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: jonathanyogev01/hello-argo
-  tag: a36297a49ea286c4a5a618ce2f3484a575b4be52
+  tag: 7ee42d9d90bc866be7b9e94fdbab7eb2fb82dc30
   pullPolicy: IfNotPresent
 
 environmentName: Dev
